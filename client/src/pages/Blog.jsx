@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Moment from "moment";
+import Loader from "../components/Loader";
 
 const Blog = () => {
   const { id } = useParams();
@@ -131,7 +132,7 @@ const Blog = () => {
       <Footer />
     </div>
   ) : (
-    <div>Loading..</div>
+    <Loader />
   );
 };
 
